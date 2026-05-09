@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Hello, world 👋</p>
+      <h1>I'm <span class="accent">Your Name</span><br/>A Developer.</h1>
+      <p class="hero-sub">I build clean, fast, and modern web experiences. Open to freelance &amp; full-time opportunities.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob"></div>
+      <div class="avatar-ring">
+        <div class="avatar">YN</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hi! I'm a passionate web developer and computer science student who loves turning ideas into reality through code. I enjoy working on projects that solve real problems and create meaningful experiences.</p>
+          <p>When I'm not coding, I'm exploring new technologies, contributing to open source, or learning something new every day.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Curiosity</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>Quick Info</h3>
+          <ul class="info-list">
+            <li><span>📍</span> Baghdad, Iraq</li>
+            <li><span>🎓</span> CS Student</li>
+            <li><span>💼</span> Open to work</li>
+            <li><span>🌐</span> English / Arabic</li>
+            <li><span>⚡</span> Full-stack Dev</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <p class="section-sub">A selection of things I've built.</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon">🛒</div>
+          <h3>E-Commerce App</h3>
+          <p>A full-stack shopping application with cart management, authentication, and payment integration.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Live Demo ↗</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🌤️</div>
+          <h3>Weather Dashboard</h3>
+          <p>Real-time weather app with beautiful visualizations, forecasts, and geolocation support.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>API</span><span>CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Live Demo ↗</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">✅</div>
+          <h3>Task Manager</h3>
+          <p>A Kanban-style productivity tool with drag-and-drop, priorities, and team collaboration.</p>
+          <div class="project-tags">
+            <span>Vue.js</span><span>Firebase</span><span>Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Live Demo ↗</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">💬</div>
+          <h3>Chat Application</h3>
+          <p>Real-time messaging app with rooms, direct messages, file sharing, and notifications.</p>
+          <div class="project-tags">
+            <span>Socket.io</span><span>Express</span><span>React</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Live Demo ↗</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">📊</div>
+          <h3>Data Visualizer</h3>
+          <p>Upload CSVs and instantly get beautiful charts, filters, and analytics dashboards.</p>
+          <div class="project-tags">
+            <span>Python</span><span>D3.js</span><span>Flask</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Live Demo ↗</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon">🎮</div>
+          <h3>Browser Game</h3>
+          <p>A fun in-browser arcade game built with Canvas API — no frameworks, pure JavaScript.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Canvas</span><span>HTML5</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm">Live Demo ↗</a>
+            <a href="#" class="btn-sm btn-ghost">GitHub ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <p class="section-sub">Technologies I work with.</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span>⚛️</span> React</div>
+            <div class="skill-item"><span>💚</span> Vue.js</div>
+            <div class="skill-item"><span>🌐</span> HTML5</div>
+            <div class="skill-item"><span>🎨</span> CSS3</div>
+            <div class="skill-item"><span>🟨</span> JavaScript</div>
+            <div class="skill-item"><span>🔷</span> TypeScript</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span>🟩</span> Node.js</div>
+            <div class="skill-item"><span>🐍</span> Python</div>
+            <div class="skill-item"><span>🚂</span> Express</div>
+            <div class="skill-item"><span>🔥</span> Firebase</div>
+            <div class="skill-item"><span>🍃</span> MongoDB</div>
+            <div class="skill-item"><span>🐘</span> PostgreSQL</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span>🐙</span> Git / GitHub</div>
+            <div class="skill-item"><span>▲</span> Vercel</div>
+            <div class="skill-item"><span>🐳</span> Docker</div>
+            <div class="skill-item"><span>☁️</span> AWS</div>
+            <div class="skill-item"><span>🎨</span> Figma</div>
+            <div class="skill-item"><span>⚡</span> Vite</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub">Have a project in mind? Let's talk!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:your@email.com">your@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="#">linkedin.com/in/yourname</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <h4>GitHub</h4>
+              <a href="#">github.com/yourname</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Send Message ✉️</button>
+          <p id="form-msg" style="display:none;margin-top:1rem;color:var(--accent);text-align:center;font-weight:600;">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Your Name · Built with ❤️ · Deployed on <strong>Vercel</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
